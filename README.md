@@ -8,5 +8,5 @@ The corresponding datasets can be downloaded [here](https://drive.google.com/fil
 ## Augmentation by Translocation (ABT)
 A simple implementation of the ABT algorithm can be found in the ABT folder.  
 The example is written for the 10S_raw_abt dataset.  
-Which can be found [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).
+10S_raw_abt can be found [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).
 
