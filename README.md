@@ -48,8 +48,7 @@ The 10S database incorporates all the images from the raw database and is proces
 ## Example: Augmentation by Translocation (ABT) for SCP
 A simple implementation of the ABT algorithm can be found in the ABT folder.  
 The example is written for the 10S_raw_abt dataset.  
-Which can be found [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).  
-If you prefer, you can skip this step and download an already augmented database like 5S or 10S.
+10S_raw_abt can be found [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).
 
 1. Download the 10S_raw_abt.zip file.
 2. Unzip the file and adjust the path in the main section of the abt_example.py file.
