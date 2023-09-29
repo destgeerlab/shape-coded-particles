@@ -1,9 +1,8 @@
 # Shape Coded Particles (SCP)
 This repository contains the code, experiments, and examples from our work titled "Deep Learning-Based Recognition of Shape-Coded Microparticles". The experiments were conducted to test and demonstrate the usability of semantic segmentation models for our particle shapes. Given the nature of our dataset ("one class per image"), we implemented Augmentation by Translocation (ABT) to compensate for the limitations of our small dataset and enhance learning results.
 - [Introduction](#Introduction)
-- [Databases](#Databases)
-- [Example: Augmentation by Translocation (ABT) for SCP](#Example:-Augmentation-by-Translocation-(ABT)-for-SCP)
-- [Example: Semantic Segmentation for SCP](#Example:-Semantic-Segmentation-for-SCP)
+- [Databases](#Database)
+- [Examples](#Examples)
 - [Results](#Results)
 - [Future Work](#Future-Work)
 - [Future Research](#Future-Research)
@@ -44,8 +43,8 @@ The 5S database is a subset of the raw database, containing only five classes an
 ### 10S Database
 The 10S database incorporates all the images from the raw database and is processed to multiclass segmentation masks. It also features both basic augmentation (BA) and ABT augmentation of the dataset.
 
-
-## Example: Augmentation by Translocation (ABT) for SCP
+## Examples
+### Example: Augmentation by Translocation (ABT) for SCP
 A simple implementation of the ABT algorithm can be found in the ABT folder.  
 The example is written for the 10S_raw_abt dataset.  
 10S_raw_abt can be found [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).
@@ -53,7 +52,7 @@ The example is written for the 10S_raw_abt dataset.
 1. Download the 10S_raw_abt.zip file.
 2. Unzip the file and adjust the path in the main section of the abt_example.py file.
 
-## Example: Semantic Segmentation for SCP 
+### Example: Semantic Segmentation for SCP 
 particle_segmentation.ipynb is a notebook showcasing examples for training different models for multiclass segmentation. The corresponding datasets can be downloaded [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).  
 
 1. Download one of the dataset .zip files.  
@@ -92,4 +91,5 @@ Since SCP has similar optics to other microscopic medical images of cells, ABT c
 TBD;
 
 ## Contact
-If you have any questions or suggestions, feel free to contact us at:  TBD;
+If you have any questions or suggestions, feel free to contact us at:  
+TBD;
