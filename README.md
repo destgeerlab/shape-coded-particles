@@ -1,16 +1,40 @@
 # Shape Coded Particles (SCP)
 This repository contains the code, experiments, and examples from our work titled "Deep Learning-Based Recognition of Shape-Coded Microparticles". The experiments were conducted to test and demonstrate the usability of semantic segmentation models for our particle shapes. Given the nature of our dataset ("one class per image"), we implemented Augmentation by Translocation (ABT) to compensate for the limitations of our small dataset and enhance learning results.
+- [Examples](#Examples)
 - [Introduction](#Introduction)
 - [Databases](#Database)
-- [Examples](#Examples)
 - [Results](#Results)
 - [Future Work](#Future-Work)
 - [Future Research](#Future-Research)
 - [Citation](#Citation)
 - [Contact](#Contact)
-## Quick start
-If you wish to get started immediately, we provide an example notebook where you can use our pre-trained models to segment some test images.  
+
+## Quick start  
 TBD;
+
+## Examples
+### Example: Augmentation by Translocation (ABT) general
+An example implementation of the abt algorithm can be found in the ABT folder ([abt_general.py](ABT/abt_general.py)).  
+This example showcases the abt algorithm on a simple generated dataset of 2 classes (no need to download a dataset).  
+[abt_general.py](ABT/abt_general.py) is the best place to start if you want to use the abt algorithm on your own dataset.
+
+### Example: Augmentation by Translocation (ABT) for SCP
+A simple implementation of the ABT algorithm can be found in the ABT folder ([abt_for_scp.py](ABT/abt_for_scp.py)).  
+The example is written for the 10S_raw_abt dataset.  
+10S_raw_abt can be found [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).
+
+1. Download the 10S_raw_abt.zip file.
+2. Unzip the file and adjust the path in the main section of the abt_for_scp.py file.
+
+### Example: Semantic Segmentation for SCP 
+[particle_segmentation.ipynb](particle_segmentation.ipynb) is a notebook showcasing examples for training different models for multiclass segmentation.  
+The corresponding datasets can be downloaded [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).  
+
+1. Download one of the dataset .zip files.  
+2. Start the notebook with GPU support (e.g. Google Colab).
+3. Upload the dataset .zip file to the notebook.
+4. Follow the steps of the notebook.
+
 ## Introduction
 Encoded particles have been utilized for multiplexed diagnostics, drug testing, and anti-counterfeiting applications. Recently, shape-coded hydrogel particles with amphiphilic properties have enabled amplified duplexed bioassays. However, a limitation in reading multiple particle shape codes in an automated and time-efficient manner hinders the widespread adoption of such powerful diagnostic platforms. In this work, we applied established deep learning-based multi-class segmentation models, such as U-Net, Attention U-Net, and UNet3+, to detect five or more particle shape codes within a single image in seconds.
 
@@ -43,22 +67,6 @@ The 5S database is a subset of the raw database, containing only five classes an
 ### 10S Database
 The 10S database incorporates all the images from the raw database and is processed to multiclass segmentation masks. It also features both basic augmentation (BA) and ABT augmentation of the dataset.
 
-## Examples
-### Example: Augmentation by Translocation (ABT) for SCP
-A simple implementation of the ABT algorithm can be found in the ABT folder.  
-The example is written for the 10S_raw_abt dataset.  
-10S_raw_abt can be found [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).
-
-1. Download the 10S_raw_abt.zip file.
-2. Unzip the file and adjust the path in the main section of the abt_example.py file.
-
-### Example: Semantic Segmentation for SCP 
-particle_segmentation.ipynb is a notebook showcasing examples for training different models for multiclass segmentation. The corresponding datasets can be downloaded [here](https://drive.google.com/file/d/1IdNliHuYhy35FoiNLBzOWP3JlsupTaol/view?usp=share_link).  
-
-1. Download one of the dataset .zip files.  
-2. Start the notebook with GPU support (e.g. Google Colab).
-3. Upload the dataset .zip file to the notebook.
-4. Follow the steps of the notebook.
 
 
 ## Results
@@ -85,11 +93,11 @@ Another simple approach would be to use nonrigid BA as a base for ABT to get mor
 ## Future Research
 We tested the ABT algorithm only on our SCP datasets where the actual location of the particles has no relation to class characteristics.
 
-Since SCP has similar optics to other microscopic medical images of cells, ABT could be used to generate new data for those datasets.
+Since SCP have similar optics to other microscopic medical images of cells, ABT could be used to generate new data for those datasets.
 
 ## Citation
 TBD;
 
 ## Contact
 If you have any questions or suggestions, feel free to contact us at:  
-TBD;
+ghulam.destgeer@tum.de, akif.sahin@tum.de, leander.eijnden@tum.de 
