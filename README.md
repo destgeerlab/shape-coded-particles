@@ -96,7 +96,16 @@ We tested the ABT algorithm only on our SCP datasets where the actual location o
 Since SCP have similar optics to other microscopic medical images of cells, ABT could be used to generate new data for those datasets.
 
 ## Citation
-TBD;
+```latex
+@article{destgeer2deep,  
+  title={Deep learning based recognition of shape-coded microparticles},  
+  author={Destgeer, Ghulam and Sahin, Mehmet Akif and Eijnden, Leander van den and Bhiri, Cyrine},  
+  journal={Frontiers in Lab on a Chip Technologies},  
+  volume={2},  
+  pages={1248265},  
+  publisher={Frontiers}  
+}
+```
 
 ## Contact
 If you have any questions or suggestions, feel free to contact us at:  
